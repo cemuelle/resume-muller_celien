@@ -3,6 +3,12 @@
   "docTitle": "CV - Célien Muller",
   "name": "Célien Muller",
   "description": "Ingénieur en informatique | Spécialisé en ingénierie des données.<br>Souriant, sensible, minutieux.",
+  "photo": "cv_photo.jpg",
+  "info": [
+    { "label": "Email", "value": "job+celien.muller@deverage.com", "type": "email" },
+    { "label": "Lieu", "value": "La Tour-de-Peilz, Suisse" },
+    { "label": "Permis", "value": "Catégorie B, BE (remorque), bateau à voile et moteur" }
+  ],
   "links": [
     {
       "label": "LinkedIn",
@@ -33,7 +39,7 @@
         "<b>2019-2024 - </b>EPFL, Informatique (170 crédits ECTS validés)",
         "<b>Mars 2019 - </b>Formation moniteur J+S Voile",
         "<b>Hiver 2019 - </b>Formation moniteur J+S Ski",
-        "<b>2016-2019 - </b>Certificat de maturité, gymnase de Burier (physique et maths appliquées)",
+        "<b>2016-2019 - </b>Certificat de maturité, gymnase de Burier (physique et applications des maths)",
         "<b>Novembre 2017 - </b>Travail du métal (HEPvs)",
         "<b>Hiver 2016 - </b>Formation aide moniteur (Ski-Valais)",
         "<b>2013-2016 - </b>Scolarité obligatoire, Les Mousquetaires, La Tour-de-Peilz (VP, mathématiques et physique)"

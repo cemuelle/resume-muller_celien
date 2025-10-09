@@ -1,73 +1,234 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <title>CV</title>
   <style>
-  :root{
-    --bg-light:#f9f9f9; --text-light:#222; --box-light:#fff; --border-light:#ddd;
-    --bg-dark:#18191a; --text-dark:#eee; --box-dark:#222327; --border-dark:#444;
-    --tag-dark:#232b41; --tag-light:#eee; --accent:#1d3557;
-  }
-  html[data-theme="light"]{background-color:var(--bg-light);color:var(--text-light)}
-  html[data-theme="dark"]{background-color:var(--bg-dark);color:var(--text-dark)}
-  body{
-    background:inherit;color:inherit;
-    font-family:'Segoe UI', Arial, sans-serif;
-    margin:0;padding:0;line-height:1.45;
-    transition:background .2s,color .2s;
-  }
-  .cv-container{
-    max-width:850px;margin:40px auto;background:var(--box-light);
-    border-radius:20px;box-shadow:0 4px 24px rgba(0,0,0,.07);
-    padding:20px 50px 20px 50px;transition:background .4s,color .4s;
-  }
-  html[data-theme="dark"] .cv-container{
-    background:var(--box-dark);color:var(--text-dark);
-    box-shadow:0 6px 36px rgba(0,0,0,.07);
-  }
-  h1{font-size:2.6em;margin:0 0 15px 0}
-  h2{
-    border-bottom:1.5px solid var(--border-light);padding-bottom:5px;
-    margin-top:40px;margin-bottom:18px;color:var(--accent);
-    font-size:1.25em;text-transform:uppercase;letter-spacing:2px;
-    transition:color .2s,border-bottom .2s;
-  }
-  html[data-theme="dark"] h2{color:#6db4ff;border-bottom:1.5px solid var(--border-dark)}
-  .infos{display:flex;flex-wrap:wrap;gap:20px;font-size:1.08em;margin-bottom:15px}
-  .infos div{min-width:220px}
-  .infos a{display:inline-flex;align-items:center;text-decoration:none;color:inherit}
-  .infos svg{margin-right:6px;flex:0 0 auto}
-  .description{font-size:1.12em;margin:12px 0 26px 0;color:#444}
-  html[data-theme="dark"] .description{color:#c0c7d1}
-  ul{margin:0;padding-left:18px}
-  .section{margin-bottom:18px}
-  .langues span,.competences span{
-    display:inline-block;margin-right:12px;padding:4px 8px;background:var(--tag-light);
-    border-radius:7px;font-size:.98em;color:#0b3d91;margin-bottom:5px;
-    transition:background .2s,color .2s;
-  }
-  html[data-theme="dark"] .langues span,html[data-theme="dark"] .competences span{
-    background:var(--tag-dark);color:#86b3fd
-  }
-  footer{
-    max-width:850px;margin:40px auto 0;font-size:.98em;text-align:center;color:#888;
-    border-top:1px solid var(--border-light);padding-top:20px;
-    display:flex;flex-direction:column;align-items:center;gap:12px;
-    transition:border-color .2s,color .2s;
-  }
-  html[data-theme="dark"] footer{border-top:1px solid var(--border-dark);color:#bbb}
-  .btn{padding:5px 14px;border:1px solid #aaa;border-radius:8px;background:transparent;
-       color:inherit;font-size:1em;cursor:pointer;transition:background .2s,border .2s,color .2s}
-  .btn:hover{background:#e3e3e3}
-  html[data-theme="dark"] .btn:hover{background:#353b46;border-color:#666;color:#fff}
-  @media (max-width:850px){
-    .cv-container{padding:22px 20px;margin:12px}
-    .infos{flex-direction:column;gap:6px}
-  }
-</style>
+    :root {
+      --bg-light: #f9f9f9;
+      --text-light: #222;
+      --box-light: #fff;
+      --border-light: #ddd;
+      --bg-dark: #18191a;
+      --text-dark: #eee;
+      --box-dark: #222327;
+      --border-dark: #444;
+      --tag-dark: #232b41;
+      --tag-light: #eee;
+      --accent: #1d3557;
+    }
+
+    html[data-theme="light"] {
+      background-color: var(--bg-light);
+      color: var(--text-light)
+    }
+
+    html[data-theme="dark"] {
+      background-color: var(--bg-dark);
+      color: var(--text-dark)
+    }
+
+    body {
+      background: inherit;
+      color: inherit;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.45;
+      transition: background .2s, color .2s;
+    }
+
+    .cv-container {
+      max-width: 850px;
+      margin: 40px auto;
+      background: var(--box-light);
+      border-radius: 20px;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, .07);
+      padding: 20px 50px 20px 50px;
+      transition: background .4s, color .4s;
+    }
+
+    html[data-theme="dark"] .cv-container {
+      background: var(--box-dark);
+      color: var(--text-dark);
+      box-shadow: 0 6px 36px rgba(0, 0, 0, .07);
+    }
+
+    h1 {
+      font-size: 2.6em;
+      margin: 0 0 15px 0
+    }
+
+    h2 {
+      border-bottom: 1.5px solid var(--border-light);
+      padding-bottom: 5px;
+      margin-top: 40px;
+      margin-bottom: 18px;
+      color: var(--accent);
+      font-size: 1.25em;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      transition: color .2s, border-bottom .2s;
+    }
+
+    html[data-theme="dark"] h2 {
+      color: #6db4ff;
+      border-bottom: 1.5px solid var(--border-dark)
+    }
+
+    .infos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      font-size: 1.08em;
+      margin-bottom: 15px
+    }
+
+    .infos div {
+      min-width: 220px
+    }
+
+    .infos a {
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+      color: inherit
+    }
+
+    .infos svg {
+      margin-right: 6px;
+      flex: 0 0 auto
+    }
+
+    .description {
+      font-size: 1.12em;
+      margin: 12px 0 26px 0;
+      color: #444
+    }
+
+    html[data-theme="dark"] .description {
+      color: #c0c7d1
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 18px
+    }
+
+    .section {
+      margin-bottom: 18px
+    }
+
+    .langues span,
+    .competences span {
+      display: inline-block;
+      margin-right: 12px;
+      padding: 4px 8px;
+      background: var(--tag-light);
+      border-radius: 7px;
+      font-size: .98em;
+      color: #0b3d91;
+      margin-bottom: 5px;
+      transition: background .2s, color .2s;
+    }
+
+    html[data-theme="dark"] .langues span,
+    html[data-theme="dark"] .competences span {
+      background: var(--tag-dark);
+      color: #86b3fd
+    }
+
+    footer {
+      max-width: 850px;
+      margin: 40px auto 0;
+      font-size: .98em;
+      text-align: center;
+      color: #888;
+      border-top: 1px solid var(--border-light);
+      padding-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      transition: border-color .2s, color .2s;
+    }
+
+    html[data-theme="dark"] footer {
+      border-top: 1px solid var(--border-dark);
+      color: #bbb
+    }
+
+    .btn {
+      padding: 5px 14px;
+      border: 1px solid #aaa;
+      border-radius: 8px;
+      background: transparent;
+      color: inherit;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background .2s, border .2s, color .2s
+    }
+
+    .btn:hover {
+      background: #e3e3e3
+    }
+
+    html[data-theme="dark"] .btn:hover {
+      background: #353b46;
+      border-color: #666;
+      color: #fff
+    }
+
+    @media (max-width:850px) {
+      .cv-container {
+        padding: 22px 20px;
+        margin: 12px
+      }
+
+      .infos {
+        flex-direction: column;
+        gap: 6px
+      }
+    }
+
+    .personal-info {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+
+    .cv-photo {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+      transition: transform .3s ease;
+    }
+
+    .cv-photo:hover {
+      transform: scale(1.05);
+    }
+
+    .personal-info a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .personal-info a:hover {
+      text-decoration: underline;
+    }
+
+    html[data-theme="dark"] .cv-photo {
+      box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+    }
+  </style>
 
 
   <script>
@@ -104,107 +265,129 @@
   </div>
 </body>
 
-  <script>
-    // i18n
-    const SUPPORTED = ['fr','en'];
-    const browserLang = navigator.language.slice(0,2).toLowerCase();
-    console.log('Browser language:', browserLang);
+<script>
+  // i18n
+  const SUPPORTED = ['fr', 'en'];
+  const browserLang = navigator.language.slice(0, 2).toLowerCase();
+  console.log('Browser language:', browserLang);
 
-    let currentLang = localStorage.getItem('lang') || (SUPPORTED.includes(browserLang) ? browserLang : 'de');
+  let currentLang = localStorage.getItem('lang') || (SUPPORTED.includes(browserLang) ? browserLang : 'de');
 
-    let ICONS = {};
+  let ICONS = {};
 
-    async function loadIcons() {
-      try {
-        const res = await fetch('icons.json', { cache: 'no-store' });
-        if (!res.ok) throw new Error('HTTP ' + res.status);
-        ICONS = await res.json();
-      } catch (e) {
-        console.error('Impossible to load icons.json', e);
-        ICONS = {};
-      }
+  async function loadIcons() {
+    try {
+      const res = await fetch('icons.json', { cache: 'no-store' });
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      ICONS = await res.json();
+    } catch (e) {
+      console.error('Impossible to load icons.json', e);
+      ICONS = {};
     }
+  }
 
-    async function loadLanguage(lang) {
-      try {
-        const res = await fetch(`lang-${lang}.json`, { cache: 'no-store' });
-        if (!res.ok) throw new Error('HTTP ' + res.status);
-        const data = await res.json();
-        renderCV(data);
-        localStorage.setItem('lang', lang);
-        currentLang = lang;
-        document.documentElement.lang = data.htmlLang || lang;
-        document.getElementById('cv-error').textContent = '';
-      } catch (e) {
-        document.getElementById('cv-error').textContent =
-          'Impossible to load language file: ' + e.message;
-        console.error(e);
-      }
+  async function loadLanguage(lang) {
+    try {
+      const res = await fetch(`lang-${lang}.json`, { cache: 'no-store' });
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      const data = await res.json();
+      renderCV(data);
+      localStorage.setItem('lang', lang);
+      currentLang = lang;
+      document.documentElement.lang = data.htmlLang || lang;
+      document.getElementById('cv-error').textContent = '';
+    } catch (e) {
+      document.getElementById('cv-error').textContent =
+        'Impossible to load language file: ' + e.message;
+      console.error(e);
     }
+  }
 
-    function toggleLanguage() {
-      const idx = SUPPORTED.indexOf(currentLang);
-      const next = SUPPORTED[(idx + 1) % SUPPORTED.length];
-      loadLanguage(next);
+  function toggleLanguage() {
+    const idx = SUPPORTED.indexOf(currentLang);
+    const next = SUPPORTED[(idx + 1) % SUPPORTED.length];
+    loadLanguage(next);
+  }
+
+  // Renderers
+  function htmlEscape(s) {
+    return s.replace(/[&<>"']/g, m => ({
+      '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+    }[m]));
+  }
+
+  function renderSection(section) {
+    const title = `<h2>${htmlEscape(section.title)}</h2>`;
+    if (section.type === 'badges') {
+      const cls = section.className
+        || (section.title.toLowerCase().includes('lang') ? 'langues' : 'competences');
+      const items = (section.items || []).map(x => `<span>${htmlEscape(x)}</span>`).join('');
+      return `${title}<div class="${cls}">${items}</div>`;
     }
-
-    // Renderers
-    function htmlEscape(s) {
-      return s.replace(/[&<>"']/g, m => ({
-        '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'
-      }[m]));
+    if (section.type === 'lines') {
+      const lines = (section.items || []).map(x => `<div class="section">${x}</div>`).join('');
+      return `${title}${lines}`;
     }
-
-    function renderSection(section) {
-      const title = `<h2>${htmlEscape(section.title)}</h2>`;
-      if (section.type === 'badges') {
-        const cls = section.className
-          || (section.title.toLowerCase().includes('lang') ? 'langues' : 'competences');
-        const items = (section.items || []).map(x => `<span>${htmlEscape(x)}</span>`).join('');
-        return `${title}<div class="${cls}">${items}</div>`;
-      }
-      if (section.type === 'lines') {
-        const lines = (section.items || []).map(x => `<div class="section">${x}</div>`).join('');
-        return `${title}${lines}`;
-      }
-      if (section.type === 'html') {
-        return `${title}<div class="section">${section.html || ''}</div>`;
-      }
-      if (section.type === 'list') {
-        const items = (section.items || [])
-          .map(x => `<li>${x}</li>`)
-          .join('');
-        return `${title}<ul>${items}</ul>`;
-      }
-      return '';
+    if (section.type === 'html') {
+      return `${title}<div class="section">${section.html || ''}</div>`;
     }
+    if (section.type === 'list') {
+      const items = (section.items || [])
+        .map(x => `<li>${x}</li>`)
+        .join('');
+      return `${title}<ul>${items}</ul>`;
+    }
+    return '';
+  }
 
-    function renderCV(data) {
-      document.title = data.docTitle || ('CV - ' + data.name);
-      const links = (data.links || []).map(l => {
-        const iconDef = ICONS[l.icon];
-  const icon = iconDef ? `<svg width="20" height="20" viewBox="${iconDef.viewBox}" fill="currentColor" style="margin-right:6px;"><path d="${iconDef.path}"/></svg>` : '';
-  
-        const label = htmlEscape(l.label || l.url);
-        const url = l.url || '#';
-        return `<div><a href="${url}" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;display:inline-flex;align-items:center;">${icon}${label}</a></div>`;
+  function renderCV(data) {
+    document.title = data.docTitle || ('CV - ' + data.name);
+    const links = (data.links || []).map(l => {
+      const iconDef = ICONS[l.icon];
+      const icon = iconDef ? `<svg width="20" height="20" viewBox="${iconDef.viewBox}" fill="currentColor" style="margin-right:6px;"><path d="${iconDef.path}"/></svg>` : '';
+      const label = htmlEscape(l.label || l.url);
+      const url = l.url || '#';
+      return `<div><a href="${url}" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;display:inline-flex;align-items:center;">${icon}${label}</a></div>`;
+    }).join('');
+
+    if (Array.isArray(data.info) && data.info.length > 0) {
+      const infoLines = data.info.map(item => {
+        const label = htmlEscape(item.label || '');
+        const value = htmlEscape(item.value || '');
+        if (!value) return '';
+
+        let formattedValue = value;
+        if (item.type === 'email') formattedValue = `<a href="mailto:${value}">${value}</a>`;
+        else if (item.type === 'tel') formattedValue = `<a href="tel:${value.replace(/\s+/g, '')}">${value}</a>`;
+        else if (item.type === 'url') formattedValue = `<a href="${value}" target="_blank" rel="noopener">${value}</a>`;
+
+        return `<div><b>${label}:</b> ${formattedValue}</div>`;
       }).join('');
 
-      const html = `
-        <h1>${htmlEscape(data.name || '')}</h1>
-        <div class="infos">${links}</div>
-        <div class="description">${data.description || ''}</div>
-        ${ (data.sections || []).map(renderSection).join('') }
-      `;
-      document.getElementById('cv-root').innerHTML = html;
-
-      document.getElementById('cv-footer').textContent = data.footer || '';
-      document.getElementById('btn-theme').textContent = data.theme_button || '🌓';
-      document.getElementById('btn-lang').textContent = data.lang_button || '🌐';
+      infoHTML = `
+        <div class="personal-info">
+          ${data.photo ? `<img src="${data.photo}" alt="${htmlEscape(data.name)}" class="cv-photo">` : ''}
+          <div>${infoLines}</div>
+        </div>`;
     }
 
-    // boot
-    loadIcons();
-    loadLanguage(currentLang);
-  </script>
+    const html = `
+        <h1>${htmlEscape(data.name || '')}</h1>
+        ${infoHTML}
+        <div class="infos">${links}</div>
+        <div class="description">${data.description || ''}</div>
+        ${(data.sections || []).map(renderSection).join('')}
+      `;
+    document.getElementById('cv-root').innerHTML = html;
+
+    document.getElementById('cv-footer').textContent = data.footer || '';
+    document.getElementById('btn-theme').textContent = data.theme_button || '🌓';
+    document.getElementById('btn-lang').textContent = data.lang_button || '🌐';
+  }
+
+  // boot
+  loadIcons();
+  loadLanguage(currentLang);
+</script>
+
 </html>
