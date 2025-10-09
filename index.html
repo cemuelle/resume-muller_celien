@@ -178,14 +178,9 @@
       return '';
     }
 
-    // function svgFromIcon(icon){
-    //   return `<svg width="20" height="20" viewBox="${icon.viewBox}" fill="currentColor" aria-hidden="true" style="margin-right:6px;"><path d="${icon.path}"/></svg>`;
-    // }
-
     function renderCV(data) {
       document.title = data.docTitle || ('CV - ' + data.name);
       const links = (data.links || []).map(l => {
-        // const icon = l.icon ? svgFromIcon(l.icon) : '';
         const iconDef = ICONS[l.icon];
   const icon = iconDef ? `<svg width="20" height="20" viewBox="${iconDef.viewBox}" fill="currentColor" style="margin-right:6px;"><path d="${iconDef.path}"/></svg>` : '';
   
