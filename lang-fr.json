@@ -26,23 +26,23 @@
       "title": "Expériences professionnelles",
       "type": "lines",
       "items": [
-        "<b>2019-2025 - </b>Moniteur de ski<br>Encadrement au sein d'un ski-club et dans des camps scolaires",
-        "<b>2019-2024 - </b>Moniteur de voile<br>Encadrement de cours collectifs et individuels pour jeunes et adultes",
-        "<b>2017-2018 - </b>Aide Moniteur de voile<br><b>2016-2018 - </b> Aide Moniteur de ski"
+        "<b>2019-2025</b>Moniteur de ski<br>Encadrement au sein d'un ski-club et dans des camps scolaires",
+        "<b>2019-2024</b>Moniteur de voile<br>Encadrement de cours collectifs et individuels pour jeunes et adultes",
+        "<b>2017-2018</b>Aide Moniteur de voile<br><b>2016-2018</b> Aide Moniteur de ski"
       ]
     },
     {
       "title": "Scolarité et certificats",
-      "type": "list",
+      "type": "lines",
       "items": [
-        "<b>2024-2025 - </b>Bachelor en Informatique et Systèmes de Communication (HES-SO Valais)",
-        "<b>2019-2024 - </b>EPFL, Informatique (170 crédits ECTS validés)",
-        "<b>Mars 2019 - </b>Formation moniteur J+S Voile",
-        "<b>Hiver 2019 - </b>Formation moniteur J+S Ski",
-        "<b>2016-2019 - </b>Certificat de maturité, gymnase de Burier (physique et applications des maths)",
-        "<b>Novembre 2017 - </b>Travail du métal (HEPvs)",
-        "<b>Hiver 2016 - </b>Formation aide moniteur (Ski-Valais)",
-        "<b>2013-2016 - </b>Scolarité obligatoire, Les Mousquetaires, La Tour-de-Peilz (VP, mathématiques et physique)"
+        "<b>2024-2025</b>Bachelor en Informatique et Systèmes de Communication (HES-SO Valais)",
+        "<b>2019-2024</b>EPFL, Informatique (170 crédits ECTS validés)",
+        "<b>Mars 2019</b>Formation moniteur J+S Voile",
+        "<b>Hiver 2019</b>Formation moniteur J+S Ski",
+        "<b>2016-2019</b>Certificat de maturité, gymnase de Burier (physique et applications des maths)",
+        "<b>Novembre 2017</b>Travail du métal (HEPvs)",
+        "<b>Hiver 2016</b>Formation aide moniteur (Ski-Valais)",
+        "<b>2013-2016</b>Scolarité obligatoire, Les Mousquetaires, La Tour-de-Peilz (VP, mathématiques et physique)"
       ]
     },
     {
