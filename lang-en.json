@@ -84,9 +84,12 @@
     },
     {
       "title": "Associative involvement",
-      "type": "lines",
+      "type": "timeline",
       "items": [
-        "<b>Since 2022</b> Member of the CVVT committee, J/70 lead<br>Team coordination, logistics, and maintenance of a racing sailboat."
+          {
+          "period": "Since 2022",
+          "text": "Member of the CVVT committee, J/70 lead<br>Team coordination, logistics, and maintenance of a racing sailboat."
+          }
       ]
     },
     {

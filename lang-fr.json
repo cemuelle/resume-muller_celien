@@ -73,9 +73,12 @@
 ,
     {
       "title": "Engagement associatif",
-      "type": "lines",
+      "type": "timeline",
       "items": [
-        "<b>Depuis 2022</b>Membre du comité CVVT, responsable J/70<br>Gestion et coordination d'un groupe de compétiteurs. Organisation logistique et entretien d'un voilier de compétition."
+        {
+          "period": "Depuis 2022",
+          "text": "Membre du comité CVVT, responsable J/70<br>Gestion et coordination d'un groupe de compétiteurs. Organisation logistique et entretien d'un voilier de compétition."
+        }
       ]
     },
     {
