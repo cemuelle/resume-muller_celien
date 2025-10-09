@@ -6,7 +6,7 @@
   "photo": "cv_photo.jpg",
   "info": [
     { "label": "Mail", "value": "job+celien.muller@deverage.com", "type": "email" },
-    { "label": "Location", "value": "La Tour-de-Peilz, Suisse" },
+    { "label": "Location", "value": "La Tour-de-Peilz, Switzerland" },
     { "label": "Licenses", "value": "Category B, BE (trailer), sailing and motorboat" }
   ],
   "links": [
@@ -24,39 +24,79 @@
   "sections": [
     {
       "title": "Professional experience",
-      "type": "lines",
+      "type": "timeline",
       "items": [
-        "<b>2019-2025 - </b>Ski instructor<br>Coaching within a ski club and school camps",
-        "<b>2019-2024 - </b>Sailing instructor<br>Group and private lessons for youth and adults",
-        "<b>2017-2018 - </b>Assistant sailing instructor<br><b>2016-2018 - </b>Assistant ski instructor"
+        {
+          "period": "2019 - 2025",
+          "text": "Ski instructor<br>Coaching within a ski club and school camps"
+        },
+        {
+          "period": "2019 - 2024",
+          "text": "Sailing instructor<br>Teaching group and private lessons for youth and adults"
+        },
+        {
+          "period": "2017 - 2018",
+          "text": "Assistant sailing instructor"
+        },
+        {
+          "period": "2016 - 2018",
+          "text": "Assistant ski instructor"
+        }
       ]
     },
     {
       "title": "Education and certificates",
-      "type": "list",
+      "type": "timeline",
       "items": [
-        "<b>2024-2025 - </b>BSc in Computer Science and Communication Systems (HES-SO Valais)",
-        "<b>2019-2024 - </b>EPFL, Computer Science (170 ECTS completed)",
-        "<b>March 2019 - </b>J+S Sailing instructor training",
-        "<b>Winter 2019 - </b>J+S Ski instructor training",
-        "<b>2016-2019 - </b>Matura, Burier Gymnasium (applied physics and mathematics)",
-        "<b>November 2017 - </b>Metalworking (HEPvs)",
-        "<b>Winter 2016 - </b>Assistant instructor training (Ski-Valais)",
-        "<b>2013-2016 - </b>Compulsory schooling, Les Mousquetaires, La Tour-de-Peilz (VP, mathematics and physics)"
+        {
+          "period": "2024 - 2025",
+          "text": "Bachelor in Computer Science and Communication Systems (HES-SO Valais)<br>Specialization in data engineering"
+        },
+        {
+          "period": "2019 - 2024",
+          "text": "EPFL, Computer Science (170 ECTS credits completed)"
+        },
+        {
+          "period": "March 2019",
+          "text": "J+S Sailing instructor training"
+        },
+        {
+          "period": "Winter 2019",
+          "text": "J+S Ski instructor training"
+        },
+        {
+          "period": "2016 - 2019",
+          "text": "Maturity diploma, Burier Gymnasium (physics and applied mathematics)"
+        },
+        {
+          "period": "November 2017",
+          "text": "Metalworking (HEPvs)"
+        },
+        {
+          "period": "Winter 2016",
+          "text": "Assistant instructor training (Ski-Valais)"
+        },
+        {
+          "period": "2013 - 2016",
+          "text": "Compulsory schooling, Les Mousquetaires, La Tour-de-Peilz (VP, mathematics and physics)"
+        }
       ]
     },
     {
       "title": "Associative involvement",
       "type": "lines",
       "items": [
-        "<b>Since 2022 - </b>CVVT committee member, J/70 lead<br>Team coordination. Logistics and maintenance of a racing sailboat."
+        "<b>Since 2022</b> Member of the CVVT committee, J/70 lead<br>Team coordination, logistics, and maintenance of a racing sailboat."
       ]
     },
     {
       "title": "Scientific contributions",
-      "type": "lines",
+      "type": "timeline",
       "items": [
-        "<b>December 2025 - </b>Co-author of the paper <i>Genetic Programming in Federated Aggregation: A comparison of FedGP with State of the Art Methods</i>, published in <i>Lecture Notes in Artificial Intelligence (LNAI)</i>, ICAART 2025 special issue."
+        {
+          "period": "December 2025",
+          "text": "Co-author of the scientific paper <i>Genetic Programming in Federated Aggregation: A comparison of FedGP with State of the Art Methods</i>, published in <i>Lecture Notes in Artificial Intelligence (LNAI)</i>, ICAART 2025 Special Issue."
+        }
       ]
     },
     {
@@ -82,8 +122,8 @@
     },
     {
       "title": "Interests",
-      "type": "html",
-      "html": "Sailing (racing), skiing, 3D printing."
+      "type": "section",
+      "text": "Sailing (racing), skiing, 3D printing."
     }
   ],
   "footer": "© 2025 Célien Muller. All rights reserved.",

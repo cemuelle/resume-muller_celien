@@ -24,41 +24,70 @@
   "sections": [
     {
       "title": "Expériences professionnelles",
-      "type": "lines",
+      "type": "timeline",
       "items": [
-        "<b>2019-2025</b>Moniteur de ski<br>Encadrement au sein d'un ski-club et dans des camps scolaires",
-        "<b>2019-2024</b>Moniteur de voile<br>Encadrement de cours collectifs et individuels pour jeunes et adultes",
-        "<b>2017-2018</b>Aide Moniteur de voile<br><b>2016-2018</b> Aide Moniteur de ski"
+        { "period": "2019 - 2025", "text": "Moniteur de ski<br>Encadrement au sein d'un ski-club et dans des camps scolaires" },
+        { "period": "2019 - 2024", "text": "Moniteur de voile<br>Encadrement de cours collectifs et individuels pour jeunes et adultes" },
+        { "period": "2017 - 2018", "text": "Aide Moniteur de voile" },
+        { "period": "2016 - 2018", "text": "Aide Moniteur de ski" }
       ]
     },
     {
-      "title": "Scolarité et certificats",
-      "type": "lines",
-      "items": [
-        "<b>2024-2025</b>Bachelor en Informatique et Systèmes de Communication (HES-SO Valais)",
-        "<b>2019-2024</b>EPFL, Informatique (170 crédits ECTS validés)",
-        "<b>Mars 2019</b>Formation moniteur J+S Voile",
-        "<b>Hiver 2019</b>Formation moniteur J+S Ski",
-        "<b>2016-2019</b>Certificat de maturité, gymnase de Burier (physique et applications des maths)",
-        "<b>Novembre 2017</b>Travail du métal (HEPvs)",
-        "<b>Hiver 2016</b>Formation aide moniteur (Ski-Valais)",
-        "<b>2013-2016</b>Scolarité obligatoire, Les Mousquetaires, La Tour-de-Peilz (VP, mathématiques et physique)"
-      ]
+  "title": "Scolarité et certificats",
+  "type": "timeline",
+  "items": [
+    {
+      "period": "2024 - 2025",
+      "text": "Bachelor en Informatique et Systèmes de Communication (HES-SO Valais)<br>Spécialisation en ingénierie des données"
     },
+    {
+      "period": "2019 - 2024",
+      "text": "EPFL, Informatique (170 crédits ECTS validés)"
+    },
+    {
+      "period": "Mars 2019",
+      "text": "Formation moniteur J+S Voile"
+    },
+    {
+      "period": "Hiver 2019",
+      "text": "Formation moniteur J+S Ski"
+    },
+    {
+      "period": "2016 - 2019",
+      "text": "Certificat de maturité, gymnase de Burier (physique et applications des maths)"
+    },
+    {
+      "period": "Novembre 2017",
+      "text": "Travail du métal (HEPvs)"
+    },
+    {
+      "period": "Hiver 2016",
+      "text": "Formation aide moniteur (Ski-Valais)"
+    },
+    {
+      "period": "2013 - 2016",
+      "text": "Scolarité obligatoire, Les Mousquetaires, La Tour-de-Peilz (VP, mathématiques et physique)"
+    }
+  ]
+}
+,
     {
       "title": "Engagement associatif",
       "type": "lines",
       "items": [
-        "<b>Depuis 2022 - </b>Membre du comité CVVT, responsable J/70<br>Gestion et coordination d'un groupe de compétiteurs. Organisation logistique et entretien d'un voilier de compétition."
+        "<b>Depuis 2022</b>Membre du comité CVVT, responsable J/70<br>Gestion et coordination d'un groupe de compétiteurs. Organisation logistique et entretien d'un voilier de compétition."
       ]
     },
     {
-      "title": "Contributions scientifiques",
-      "type": "lines",
-      "items": [
-        "<b>Décembre 2025 - </b>Co-auteur de l’article scientifique <i>Genetic Programming in Federated Aggregation: A comparison of FedGP with State of the Art Methods</i>, publié dans la revue <i>Lecture Notes in Artificial Intelligence (LNAI)</i>, Special Issue ICAART 2025."
-      ]
-    },
+  "title": "Contributions scientifiques",
+  "type": "timeline",
+  "items": [
+    {
+      "period": "Décembre 2025",
+      "text": "Co-auteur de l’article scientifique <i>Genetic Programming in Federated Aggregation: A comparison of FedGP with State of the Art Methods</i>, publié dans la revue <i>Lecture Notes in Artificial Intelligence (LNAI)</i>, Special Issue ICAART 2025."
+    }
+  ]
+},
     {
       "title": "Langues",
       "type": "badges",
@@ -82,8 +111,8 @@
     },
     {
       "title": "Centres d'intérêts",
-      "type": "html",
-      "html": "Voile (compétition), ski, impression 3D."
+      "type": "section",
+      "text": "Voile (compétition), ski, impression 3D."
     }
   ],
   "footer": "© 2025 Célien Muller. Tous droits réservés.",

@@ -240,6 +240,25 @@
   white-space: nowrap;
 }
 
+.timeline {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  column-gap: 14px;
+  row-gap: 0px;
+  align-items: start;
+}
+
+.timeline-row {
+  display: contents;
+}
+
+.timeline-period {
+  white-space: nowrap;
+}
+
+.timeline-text {
+  line-height: 1.4;
+}
   </style>
 
 
@@ -340,8 +359,8 @@
       const lines = (section.items || []).map(x => `<div class="section">${x}</div>`).join('');
       return `${title}${lines}`;
     }
-    if (section.type === 'html') {
-      return `${title}<div class="section">${section.html || ''}</div>`;
+    if (section.type === 'section') {
+      return `${title}<div class="section">${section.text || ''}</div>`;
     }
     if (section.type === 'list') {
       const items = (section.items || [])
@@ -349,6 +368,15 @@
         .join('');
       return `${title}<ul>${items}</ul>`;
     }
+    if (section.type === 'timeline') {
+    const rows = (section.items || []).map(it =>
+      `<div class="timeline-row">
+        <div class="timeline-period"><b>${htmlEscape(it.period || '')}</b></div>
+        <div class="timeline-text">${it.text || ''}</div>
+      </div>`
+    ).join('');
+    return `${title}<div class="timeline">${rows}</div>`;
+  }
     return '';
   }
 
