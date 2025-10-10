@@ -12,8 +12,11 @@ index.html
 favicon.ico
 cv_photo.jpg
 icons.json
-lang-en.json
-lang-fr.json
+style.css
+lang/
+  lang-en.json
+  lang-fr.json
+  lang-de.json 
 ```
 
 ---
@@ -24,7 +27,7 @@ lang-fr.json
 Just open `index.html` in a web browser. It runs entirely client-side.
 
 ### 2. Language Detection
-The CV automatically loads in your browser's language (`fr` or `en`).  
+The CV automatically loads in your browser's language (`fr`, `en` or `de`).  
 You can manually switch language via the 🌐 button.
 
 ### 3. Theme Switching
