@@ -328,6 +328,7 @@
       currentLang = lang;
       document.documentElement.lang = data.htmlLang || lang;
       document.getElementById('cv-error').textContent = '';
+      alignTimelinePeriods();
     } catch (e) {
       document.getElementById('cv-error').textContent =
         'Impossible to load language file: ' + e.message;
