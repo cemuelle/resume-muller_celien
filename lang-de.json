@@ -1,0 +1,124 @@
+{
+  "htmlLang": "de",
+  "docTitle": "Lebenslauf - Célien Muller",
+  "name": "Célien Muller",
+  "title_description": "Informatikingenieur | Spezialisierung in Data Engineering",
+  "adjectives": "Lächelnd, sensibel, sorgfältig und fleißig",
+  "photo": "cv_photo.jpg",
+  "info": [
+    { "label": "E-Mail", "value": "job+celien.muller@deverage.com", "type": "email" },
+    { "label": "Ort", "value": "La Tour-de-Peilz, Schweiz" },
+    { "label": "Führerscheine", "value": "Kategorie B, BE (Anhänger)<br> Segel (See und Hochseeschiff) und Motorboot" }
+  ],
+  "links": [
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/celien-muller/",
+      "icon": "linkedin"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/cemuelle",
+      "icon": "github"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Berufserfahrung",
+      "type": "timeline",
+      "items": [
+        { "period": "2019 - 2025", "text": "Skilehrer<br>Betreuung in einem Skiclub und in Schullagern" },
+        { "period": "2019 - 2024", "text": "Segellehrer<br>Gruppen- und Privatunterricht für Jugendliche und Erwachsene" },
+        { "period": "2017 - 2018", "text": "Assistent Segellehrer" },
+        { "period": "2016 - 2018", "text": "Assistent Skilehrer" }
+      ]
+    },
+    {
+      "title": "Ausbildung und Zertifikate",
+      "type": "timeline",
+      "items": [
+        {
+          "period": "2024 - 2025",
+          "text": "Bachelor in Informatik und Kommunikationssystemen (HES-SO Wallis)<br>Spezialisierung in Data Engineering"
+        },
+        {
+          "period": "2019 - 2024",
+          "text": "EPFL, Informatik (170 ECTS-Punkte abgeschlossen)"
+        },
+        {
+          "period": "März 2019",
+          "text": "J+S Segellehrerausbildung"
+        },
+        {
+          "period": "Winter 2019",
+          "text": "J+S Skilehrerausbildung"
+        },
+        {
+          "period": "2016 - 2019",
+          "text": "Maturitätszeugnis, Gymnasium Burier (Physik und angewandte Mathematik)"
+        },
+        {
+          "period": "November 2017",
+          "text": "Metallbearbeitung (HEPvs)"
+        },
+        {
+          "period": "Winter 2016",
+          "text": "Assistentenausbildung (Ski-Wallis)"
+        },
+        {
+          "period": "2013 - 2016",
+          "text": "Obligatorische Schulbildung, Les Mousquetaires, La Tour-de-Peilz (VP, Mathematik und Physik)"
+        }
+      ]
+    },
+    {
+      "title": "Vereinsengagement",
+      "type": "timeline",
+      "items": [
+        {
+          "period": "Seit 2022",
+          "text": "Mitglied des CVVT-Komitees, J/70-Verantwortlicher<br>Teamkoordination, Logistik und Wartung eines Regattasegelboots."
+        }
+      ]
+    },
+    {
+      "title": "Wissenschaftliche Beiträge",
+      "type": "timeline",
+      "items": [
+        {
+          "period": "Dezember 2025",
+          "text": "Mitautor des wissenschaftlichen Artikels <i>Genetic Programming in Federated Aggregation: A comparison of FedGP with State of the Art Methods</i>, veröffentlicht in <i>Lecture Notes in Artificial Intelligence (LNAI)</i>, ICAART 2025 Special Issue."
+        }
+      ]
+    },
+    {
+      "title": "Sprachen",
+      "type": "badges",
+      "items": [
+        "Französisch (Muttersprache)",
+        "Englisch (akademisch)",
+        "Deutsch (Schule)"
+      ]
+    },
+    {
+      "title": "Technische Fähigkeiten",
+      "type": "badges",
+      "items": [
+        "Programmierung (Python, C, Java)",
+        "Git",
+        "Docker",
+        "Linux",
+        "CAD und 3D-Druck",
+        "Maschinelles Lernen"
+      ]
+    },
+    {
+      "title": "Interessen",
+      "type": "section",
+      "text": "Segeln (Regatta), Skifahren, 3D-Druck."
+    }
+  ],
+  "footer": "© 2025 Célien Muller. Alle Rechte vorbehalten.",
+  "theme_button": "🌓 Thema",
+  "lang_button": "🌐 Sprache"
+}
