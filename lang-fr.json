@@ -2,12 +2,13 @@
   "htmlLang": "fr",
   "docTitle": "CV - Célien Muller",
   "name": "Célien Muller",
-  "description": "Ingénieur en informatique | Spécialisé en ingénierie des données.<br>Souriant, sensible, minutieux.",
+  "title_description": "Ingénieur en informatique | Spécialisé en ingénierie des données",
+  "adjectives": "Souriant, sensible, minutieux et assidu",
   "photo": "cv_photo.jpg",
   "info": [
     { "label": "Email", "value": "job+celien.muller@deverage.com", "type": "email" },
     { "label": "Lieu", "value": "La Tour-de-Peilz, Suisse" },
-    { "label": "Permis", "value": "Catégorie B, BE (remorque), bateau à voile et moteur" }
+    { "label": "Permis", "value": "Catégorie B, BE (remorque)<br> bateau à voile (lac et hauturier) et moteur" }
   ],
   "links": [
     {

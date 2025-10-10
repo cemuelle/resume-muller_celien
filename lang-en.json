@@ -2,12 +2,13 @@
   "htmlLang": "en",
   "docTitle": "CV - Célien Muller",
   "name": "Célien Muller",
-  "description": "Computer science engineer | Specialized in data engineering.<br>Smiling, attentive, meticulous.",
+  "title_description": "Computer science engineer | Specialized in data engineering",
+  "adjectives": "Smiling, sensitive, meticulous, and diligent",
   "photo": "cv_photo.jpg",
   "info": [
     { "label": "Mail", "value": "job+celien.muller@deverage.com", "type": "email" },
     { "label": "Location", "value": "La Tour-de-Peilz, Switzerland" },
-    { "label": "Licenses", "value": "Category B, BE (trailer), sailing and motorboat" }
+    { "label": "Licenses", "value": "Category B, BE (trailer)<br> sailing (inland and offshore) and motorboat" }
   ],
   "links": [
     {

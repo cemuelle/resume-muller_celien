@@ -103,14 +103,20 @@
       flex: 0 0 auto
     }
 
-    .description {
-      font-size: 1.12em;
-      margin: 12px 0 26px 0;
-      color: #444
+    .title-description {
+      font-size: 1.2em;
+      font-weight: 500;
+      margin: 8px 0 6px 0;
     }
 
-    html[data-theme="dark"] .description {
-      color: #c0c7d1
+    .adjectives {
+      font-size: 1.05em;
+      color: #555;
+      margin-bottom: 24px;
+    }
+
+    html[data-theme="dark"] .adjectives {
+      color: #c0c7d1;
     }
 
     ul {
@@ -229,39 +235,54 @@
       box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
     }
 
-.section {
-  display: grid;
-  grid-template-columns: max-content 1fr;
-  column-gap: 12px;
-  align-items: start;
-}
+    .section {
+      display: grid;
+      grid-template-columns: max-content 1fr;
+      column-gap: 12px;
+      align-items: start;
+    }
 
-.section b {
-  white-space: nowrap;
-}
+    .section b {
+      white-space: nowrap;
+    }
 
-.timeline {
-  display: grid;
-  grid-template-columns: max-content 1fr;
-  column-gap: 14px;
-  align-items: start;
-}
+    .timeline {
+      display: grid;
+      grid-template-columns: max-content 1fr;
+      column-gap: 14px;
+      align-items: start;
+    }
 
-.timeline-row {
-  display: contents;
-}
+    .timeline-row {
+      display: contents;
+    }
 
-.timeline-period {
-  font-weight: bold;
-  white-space: nowrap;
-}
+    .timeline-period {
+      font-weight: bold;
+      white-space: nowrap;
+    }
 
-.timeline-text {
-  line-height: 1.4;
-}
+    .timeline-text {
+      line-height: 1.4;
+    }
 
+    .personal-info {
+      display: flex;
+      align-items: flex-end;
+      gap: 30px;
+    }
+
+    .personal-info > div {
+      display: grid;
+      grid-template-columns: max-content 1fr;
+      column-gap: 20px;
+      row-gap: 2px;
+    }
+
+    .personal-info > div > div {
+      display: contents; 
+    }
   </style>
-
 
   <script>
     // Theme
@@ -395,7 +416,7 @@
     if (Array.isArray(data.info) && data.info.length > 0) {
       const infoLines = data.info.map(item => {
         const label = htmlEscape(item.label || '');
-        const value = htmlEscape(item.value || '');
+        const value = item.value || '';
         if (!value) return '';
 
         let formattedValue = value;
@@ -403,7 +424,7 @@
         else if (item.type === 'tel') formattedValue = `<a href="tel:${value.replace(/\s+/g, '')}">${value}</a>`;
         else if (item.type === 'url') formattedValue = `<a href="${value}" target="_blank" rel="noopener">${value}</a>`;
 
-        return `<div><b>${label}:</b> ${formattedValue}</div>`;
+        return `<div><b>${label}</b> ${formattedValue}</div>`;
       }).join('');
 
       infoHTML = `
@@ -416,8 +437,9 @@
     const html = `
         <h1>${htmlEscape(data.name || '')}</h1>
         ${infoHTML}
+        <div class="title-description">${data.title_description || ''}</div>
+        ${data.adjectives ? `<div class="adjectives">${data.adjectives}</div>` : ''}
         <div class="infos">${links}</div>
-        <div class="description">${data.description || ''}</div>
         ${(data.sections || []).map(renderSection).join('')}
       `;
     document.getElementById('cv-root').innerHTML = html;
