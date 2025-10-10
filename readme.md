@@ -3,7 +3,11 @@
 A minimalist and multilingual CV (resume) template built using **HTML**, **CSS**, and **JavaScript**.  
 Content, structure, and icons are fully configurable through JSON files.
 
+An example CV built with this template is available at:  
+👉 **[https://cv.deverage.ch](https://cv.deverage.ch)**
+
 ---
+
 
 ## 🧩 Project Structure
 
