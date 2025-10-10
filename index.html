@@ -303,7 +303,7 @@
   const browserLang = navigator.language.slice(0, 2).toLowerCase();
   console.log('Browser language:', browserLang);
 
-  let currentLang = localStorage.getItem('lang') || (SUPPORTED.includes(browserLang) ? browserLang : 'de');
+  let currentLang = localStorage.getItem('lang') || (SUPPORTED.includes(browserLang) ? browserLang : SUPPORTED[0]);
 
   let ICONS = {};
 
@@ -441,25 +441,6 @@
       p.style.width = maxWidth + 'px';
     });
   }
-
-  async function loadLanguage(lang) {
-    try {
-      const res = await fetch(`lang-${lang}.json`, { cache: 'no-store' });
-      if (!res.ok) throw new Error('HTTP ' + res.status);
-      const data = await res.json();
-      renderCV(data);
-      localStorage.setItem('lang', lang);
-      currentLang = lang;
-      document.documentElement.lang = data.htmlLang || lang;
-      document.getElementById('cv-error').textContent = '';
-      alignTimelinePeriods();
-    } catch (e) {
-      document.getElementById('cv-error').textContent =
-        'Impossible de charger le fichier de langue: ' + e.message;
-      console.error(e);
-    }
-  }
-
   // boot
   loadIcons();
   loadLanguage(currentLang);
