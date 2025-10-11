@@ -2,8 +2,8 @@
   "htmlLang": "en",
   "docTitle": "CV - Célien Muller",
   "name": "Célien Muller",
-  "title_description": "Computer science engineer | Specialized in data engineering",
-  "adjectives": "Smiling, sensitive, meticulous, and diligent",
+  "title_description": "Computer science engineer | Specialized in Data Engineering",
+  "adjectives": "Smiling, sensitive and meticulous",
   "photo": "cv_photo.jpg",
   "info": [
     { "label": "Mail", "value": "job+celien.muller@deverage.com", "type": "email" },
@@ -89,7 +89,7 @@
       "items": [
           {
           "period": "Since 2022",
-          "text": "Member of the CVVT committee, J/70 lead<br>Team coordination, logistics, and maintenance of a racing sailboat."
+          "text": "Member of the CVVT committee, J/70 lead<br>Team coordination, logistics, and maintenance of a racing sailboat"
           }
       ]
     },
@@ -99,7 +99,7 @@
       "items": [
         {
           "period": "December 2025",
-          "text": "Co-author of the scientific paper <i>Genetic Programming in Federated Aggregation: A comparison of FedGP with State of the Art Methods</i>, published in <i>Lecture Notes in Artificial Intelligence (LNAI)</i>, ICAART 2025 Special Issue."
+          "text": "Co-author of the scientific paper <i>Genetic Programming in Federated Aggregation: A comparison of FedGP with State of the Art Methods</i>, published in <i>Lecture Notes in Artificial Intelligence (LNAI)</i>, ICAART 2025 Special Issue"
         }
       ]
     },

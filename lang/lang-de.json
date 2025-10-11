@@ -3,7 +3,7 @@
   "docTitle": "Lebenslauf - Célien Muller",
   "name": "Célien Muller",
   "title_description": "Informatikingenieur | Spezialisierung in Data Engineering",
-  "adjectives": "Lächelnd, sensibel, sorgfältig und fleißig",
+  "adjectives": "Lächelnd, sensibel und sorgfältig",
   "photo": "cv_photo.jpg",
   "info": [
     { "label": "E-Mail", "value": "job+celien.muller@deverage.com", "type": "email" },
@@ -77,7 +77,7 @@
       "items": [
         {
           "period": "Seit 2022",
-          "text": "Mitglied des CVVT-Komitees, J/70-Verantwortlicher<br>Teamkoordination, Logistik und Wartung eines Regattasegelboots."
+          "text": "Mitglied des CVVT-Komitees, J/70-Verantwortlicher<br>Teamkoordination, Logistik und Wartung eines Regattasegelboots"
         }
       ]
     },
@@ -87,7 +87,7 @@
       "items": [
         {
           "period": "Dezember 2025",
-          "text": "Mitautor des wissenschaftlichen Artikels <i>Genetic Programming in Federated Aggregation: A comparison of FedGP with State of the Art Methods</i>, veröffentlicht in <i>Lecture Notes in Artificial Intelligence (LNAI)</i>, ICAART 2025 Special Issue."
+          "text": "Mitautor des wissenschaftlichen Artikels <i>Genetic Programming in Federated Aggregation: A comparison of FedGP with State of the Art Methods</i>, veröffentlicht in <i>Lecture Notes in Artificial Intelligence (LNAI)</i>, ICAART 2025 Special Issue"
         }
       ]
     },
