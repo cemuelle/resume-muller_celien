@@ -7,6 +7,7 @@
   "photo": "cv_photo.jpg",
   "info": [
     { "label": "Email", "value": "job+celien.muller@deverage.com", "type": "email" },
+    { "label": "Né le", "value": "02 août 2000" },
     { "label": "Lieu", "value": "La Tour-de-Peilz, Suisse" },
     { "label": "Permis", "value": "Catégorie B, BE (remorque)<br> bateau à voile (lac et hauturier) et moteur" }
   ],
@@ -27,8 +28,11 @@
       "title": "Expériences professionnelles",
       "type": "timeline",
       "items": [
+        { "period": "2025-2026", "text": "Schweizer Armee - Service long<br>Gestion et planification de vols d’aéronefs, coordination avec différents acteurs, soutien logistique et suivi du bon fonctionnement du matériel" },
+        { "period": "2025", "text": "Schweizer Armee - École de recrue" },
         { "period": "2019 - 2025", "text": "Moniteur de ski<br>Encadrement au sein d'un ski-club et dans des camps scolaires" },
         { "period": "2019 - 2024", "text": "Moniteur de voile<br>Encadrement de cours collectifs et individuels pour jeunes et adultes" },
+        { "period": "Novembre 2017", "text": "Travail du métal (HEPvs)"},
         { "period": "2017 - 2018", "text": "Aide Moniteur de voile" },
         { "period": "2016 - 2018", "text": "Aide Moniteur de ski" }
       ]
@@ -58,10 +62,6 @@
       "text": "Certificat de maturité, gymnase de Burier (physique et applications des maths)"
     },
     {
-      "period": "Novembre 2017",
-      "text": "Travail du métal (HEPvs)"
-    },
-    {
       "period": "Hiver 2016",
       "text": "Formation aide moniteur (Ski-Valais)"
     },
@@ -86,6 +86,10 @@
   "title": "Contributions scientifiques",
   "type": "timeline",
   "items": [
+    {
+      "period": "2025",
+      "text": "Co-auteur de l’article scientifique <i>FedGP Resilience: A Comparative Study with Standard Federated Aggregation Methods under Adversarial Scenarios</i>"
+    },
     {
       "period": "Décembre 2025",
       "text": "Co-auteur de l’article scientifique <i>Genetic Programming in Federated Aggregation: A comparison of FedGP with State of the Art Methods</i>, publié dans la revue <i>Lecture Notes in Artificial Intelligence (LNAI)</i>, Special Issue ICAART 2025"
