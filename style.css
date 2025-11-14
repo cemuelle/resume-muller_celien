@@ -181,13 +181,18 @@ html[data-theme="dark"] .btn:hover {
 
 @media (max-width:850px) {
     .cv-container {
-    padding: 22px 20px;
-    margin: 12px
+        padding: 22px 20px;
+        margin: 12px;
     }
 
     .infos {
-    flex-direction: column;
-    gap: 6px
+        flex-wrap: nowrap;
+        justify-content: center;
+        gap: 14px;
+    }
+
+    .infos div {
+        min-width: auto;
     }
 }
 
@@ -272,4 +277,35 @@ html[data-theme="dark"] .cv-photo {
 
 .personal-info > div > div {
     display: contents; 
+}
+
+
+/* -------- THEME CLAIR FOR PRINT -------- */
+@media print {
+  /* Force clair theme for print */
+  html, body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  :root {
+    --bg: #ffffff !important;
+    --fd: #181818 !important; 
+    --txt: #000000 !important;
+    --border: rgba(0, 0, 0, 0.2) !important;
+    --bg-card: #ffffff !important;
+  }
+
+  .dark, [data-theme="dark"] {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+}
+
+
+/* -------- HIDE FOOTER WHEN PRINTING -------- */
+@media print {
+  footer {
+    display: none !important;
+  }
 }
