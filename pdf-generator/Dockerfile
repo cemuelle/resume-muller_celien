@@ -1,9 +1,9 @@
 FROM node:20-bookworm-slim
 
-# Empêche Puppeteer de télécharger Chromium
 ENV PUPPETEER_SKIP_DOWNLOAD=true
+ENV CHROMIUM_PATH=/usr/bin/chromium
+ENV OUT_DIR=/output
 
-# Installer Chromium + dépendances système
 RUN apt-get update && apt-get install -y \
   chromium \
   ca-certificates \
@@ -29,19 +29,11 @@ RUN apt-get update && apt-get install -y \
   xdg-utils \
   && rm -rf /var/lib/apt/lists/*
 
-# Variable utilisée par le script Puppeteer
-ENV CHROMIUM_PATH=/usr/bin/chromium
-
 WORKDIR /app
-
-# Installer les dépendances Node
 COPY package*.json ./
 RUN npm install --production
-
-# Copier le script
 COPY generate.js .
 
-# Dossier de sortie du PDF
 RUN mkdir -p /output
 
-CMD ["node", "generate.js"]
+ENTRYPOINT ["node", "generate.js"]
