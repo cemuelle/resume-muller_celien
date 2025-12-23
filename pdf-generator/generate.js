@@ -3,6 +3,7 @@ const puppeteer = require("puppeteer");
 async function run() {
   const browser = await puppeteer.launch({
     headless: "new",
+    executablePath: process.env.CHROMIUM_PATH,
     args: [
       "--no-sandbox",
       "--disable-setuid-sandbox",
@@ -61,7 +62,7 @@ async function run() {
   });
 
   await page.pdf({
-    path: "CV_Muller_Celien.pdf",
+    path: "/output/CV_Muller_Celien.pdf",
     format: "A4",
     printBackground: true,
     preferCSSPageSize: true,
