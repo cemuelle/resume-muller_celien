@@ -72,14 +72,17 @@ html[data-theme="dark"] h2 {
 
 .infos {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    font-size: 1.08em;
-    margin-bottom: 15px
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    text-align: left !important;
 }
 
 .infos div {
-    min-width: 220px
+    min-width: auto;
+    text-align: left !important;
+    margin-left: 0 !important;
 }
 
 .infos a {
@@ -184,17 +187,8 @@ html[data-theme="dark"] .btn:hover {
         padding: 22px 20px;
         margin: 12px;
     }
-
-    .infos {
-        flex-wrap: nowrap;
-        justify-content: center;
-        gap: 14px;
-    }
-
-    .infos div {
-        min-width: auto;
-    }
 }
+
 
 .personal-info {
     display: flex;
