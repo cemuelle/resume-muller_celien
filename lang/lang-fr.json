@@ -7,7 +7,6 @@
   "photo": "cv_photo.jpg",
   "info": [
     { "label": "Email", "value": "job+celien.muller@deverage.com", "type": "email" },
-    { "label": "Né le", "value": "02 août 2000" },
     { "label": "Lieu", "value": "La Tour-de-Peilz, Suisse" },
     { "label": "Permis", "value": "Catégorie B, BE (remorque)<br> bateau à voile (lac et hauturier) et moteur" }
   ],
@@ -87,12 +86,15 @@
   "type": "timeline",
   "items": [
     {
-      "period": "2025",
-      "text": "Co-auteur de l’article scientifique <i>FedGP Resilience: A Comparative Study with Standard Federated Aggregation Methods under Adversarial Scenarios</i>"
+      "period": "2026",
+      "text": "Co-auteur de l’article scientifique",
+      "links": [{"label": "FedGP Resilience: A Comparative Study with Standard Federated Aggregation Methods under Adversarial Scenarios :", "url": "https://publications.hevs.ch/index.php/publications/show/3335"}]
     },
     {
-      "period": "Décembre 2025",
-      "text": "Co-auteur de l’article scientifique <i>Genetic Programming in Federated Aggregation: A comparison of FedGP with State of the Art Methods</i>, publié dans la revue <i>Lecture Notes in Artificial Intelligence (LNAI)</i>, Special Issue ICAART 2025"
+      "period": "2025",
+      "text": "Co-auteur de l’article scientifique, publié dans la revue <i>Lecture Notes in Artificial Intelligence (LNAI)</i>, Special Issue ICAART 2025",
+      "links": [{"label": "Genetic Programming in Federated Aggregation: A comparison of FedGP with State of the Art Methods", "url": "https://publications.hevs.ch/index.php/publications/show/3244"}]
+    
     }
   ]
 },

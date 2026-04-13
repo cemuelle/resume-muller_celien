@@ -107,7 +107,14 @@ Example (timeline):
   "type": "timeline",
   "items": [
     { "period": "2020 - 2025", "text": "Software Engineer at ExampleCorp" },
-    { "period": "2018 - 2020", "text": "Intern at DataWorks" }
+    {
+      "period": "2018 - 2020",
+      "text": "Intern at DataWorks",
+      "links": [
+        { "label": "Project page", "url": "https://example.com/project" },
+        { "label": "Paper", "url": "https://example.com/paper" }
+      ]
+    }
   ]
 }
 ```

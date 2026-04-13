@@ -94,6 +94,23 @@
     }[m]));
   }
 
+  function renderTimelineText(item) {
+    const text = item.text || '';
+    const links = Array.isArray(item.links) ? item.links : [];
+    if (links.length === 0) return text;
+
+    const renderedLinks = links
+      .filter(link => link && link.url)
+      .map(link => {
+        const label = htmlEscape(link.label || link.url);
+        const url = htmlEscape(link.url);
+        return `<a href="${url}" target="_blank" rel="noopener">${label}</a>`;
+      })
+      .join(' · ');
+
+    return renderedLinks ? `${text}<br>${renderedLinks}` : text;
+  }
+
   function renderSection(section) {
     const title = `<h2>${htmlEscape(section.title)}</h2>`;
     if (section.type === 'badges') {
@@ -119,7 +136,7 @@
     const rows = (section.items || []).map(it =>
       `<div class="timeline-row">
         <div class="timeline-period"><b>${htmlEscape(it.period || '')}</b></div>
-        <div class="timeline-text">${it.text || ''}</div>
+        <div class="timeline-text">${renderTimelineText(it)}</div>
       </div>`
     ).join('');
     return `${title}<div class="timeline">${rows}</div>`;

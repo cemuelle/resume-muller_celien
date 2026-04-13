@@ -10,6 +10,10 @@
     --tag-dark: #232b41;
     --tag-light: #eee;
     --accent: #1d3557;
+    --link-light: #1d4ed8;
+    --link-light-hover: #1e40af;
+    --link-dark: #8ec5ff;
+    --link-dark-hover: #b7dcff;
 }
 
 html[data-theme="light"] {
@@ -254,6 +258,32 @@ html[data-theme="dark"] .cv-photo {
 
 .timeline-text {
     line-height: 1.4;
+}
+
+.timeline-text a,
+.section a,
+ul a {
+    color: var(--link-light);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.timeline-text a:hover,
+.section a:hover,
+ul a:hover {
+    color: var(--link-light-hover);
+}
+
+html[data-theme="dark"] .timeline-text a,
+html[data-theme="dark"] .section a,
+html[data-theme="dark"] ul a {
+    color: var(--link-dark);
+}
+
+html[data-theme="dark"] .timeline-text a:hover,
+html[data-theme="dark"] .section a:hover,
+html[data-theme="dark"] ul a:hover {
+    color: var(--link-dark-hover);
 }
 
 .personal-info {
