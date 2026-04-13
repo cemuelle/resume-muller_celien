@@ -28,6 +28,14 @@
       "type": "timeline",
       "items": [
         {
+          "period": "2025 - 2026",
+          "text": "Swiss Armed Forces - Long service<br>Management and scheduling of aircraft flights, coordination with multiple stakeholders, logistics support, and monitoring of equipment readiness"
+        },
+        {
+          "period": "2025",
+          "text": "Swiss Armed Forces - Recruit school"
+        },
+        {
           "period": "2019 - 2025",
           "text": "Ski instructor<br>Coaching within a ski club and school camps"
         },
@@ -98,8 +106,24 @@
       "type": "timeline",
       "items": [
         {
-          "period": "December 2025",
-          "text": "Co-author of the scientific paper <i>Genetic Programming in Federated Aggregation: A comparison of FedGP with State of the Art Methods</i>, published in <i>Lecture Notes in Artificial Intelligence (LNAI)</i>, ICAART 2025 Special Issue"
+          "period": "2026",
+          "text": "Co-author of the scientific paper",
+          "links": [
+            {
+              "label": "FedGP Resilience: A Comparative Study with Standard Federated Aggregation Methods under Adversarial Scenarios",
+              "url": "https://publications.hevs.ch/index.php/publications/show/3335"
+            }
+          ]
+        },
+        {
+          "period": "2025",
+          "text": "Co-author of the scientific paper, published in <i>Lecture Notes in Artificial Intelligence (LNAI)</i>, ICAART 2025 Special Issue",
+          "links": [
+            {
+              "label": "Genetic Programming in Federated Aggregation: A comparison of FedGP with State of the Art Methods",
+              "url": "https://publications.hevs.ch/index.php/publications/show/3244"
+            }
+          ]
         }
       ]
     },

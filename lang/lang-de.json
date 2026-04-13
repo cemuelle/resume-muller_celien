@@ -27,6 +27,14 @@
       "title": "Berufserfahrung",
       "type": "timeline",
       "items": [
+        {
+          "period": "2025 - 2026",
+          "text": "Schweizer Armee - Durchdiener<br>Verwaltung und Planung von Luftfahrzeugflügen, Koordination mit verschiedenen Beteiligten, logistische Unterstützung und Überwachung der Einsatzbereitschaft des Materials"
+        },
+        {
+          "period": "2025",
+          "text": "Schweizer Armee - Rekrutenschule"
+        },
         { "period": "2019 - 2025", "text": "Skilehrer<br>Betreuung in einem Skiclub und in Schullagern" },
         { "period": "2019 - 2024", "text": "Segellehrer<br>Gruppen- und Privatunterricht für Jugendliche und Erwachsene" },
         { "period": "2017 - 2018", "text": "Assistent Segellehrer" },
@@ -86,8 +94,24 @@
       "type": "timeline",
       "items": [
         {
-          "period": "Dezember 2025",
-          "text": "Mitautor des wissenschaftlichen Artikels <i>Genetic Programming in Federated Aggregation: A comparison of FedGP with State of the Art Methods</i>, veröffentlicht in <i>Lecture Notes in Artificial Intelligence (LNAI)</i>, ICAART 2025 Special Issue"
+          "period": "2026",
+          "text": "Mitautor des wissenschaftlichen Artikels",
+          "links": [
+            {
+              "label": "FedGP Resilience: A Comparative Study with Standard Federated Aggregation Methods under Adversarial Scenarios",
+              "url": "https://publications.hevs.ch/index.php/publications/show/3335"
+            }
+          ]
+        },
+        {
+          "period": "2025",
+          "text": "Mitautor des wissenschaftlichen Artikels, veröffentlicht in <i>Lecture Notes in Artificial Intelligence (LNAI)</i>, ICAART 2025 Special Issue",
+          "links": [
+            {
+              "label": "Genetic Programming in Federated Aggregation: A comparison of FedGP with State of the Art Methods",
+              "url": "https://publications.hevs.ch/index.php/publications/show/3244"
+            }
+          ]
         }
       ]
     },
